@@ -38,8 +38,3 @@ function PalindromeTest() {
   // Defines a palindromesOnlyObject (Shows only phrases and words that have been tested to be palindromes)
   this.palindromesOnlyObject = palindromesOnly(new Map([...this.phrasesPalindromeObject, ...this.wordsPalindromeObject]));
 }
-
-let napoleonsLament = new PalindromeTest("Able was I, ere I saw Elba", "reconocer reconocer", "Mallam, contiguous palindrome words give palindrome phrase");
-console.log(napoleonsLament.phrasesPalindromeObject);
-console.log(napoleonsLament.wordsPalindromeObject);
-console.log(napoleonsLament.palindromesOnlyObject);
