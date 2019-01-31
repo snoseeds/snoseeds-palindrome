@@ -78,7 +78,8 @@ function PalindromeTest() {
 }
 
 },{}],2:[function(require,module,exports){
-let PalindromeTest = require("../../../index.js");
+let PalindromeTest = require("snoseeds-palindrome");
+// let PalindromeTest = require("../../../index.js");
 
 // let string = prompt("Please enter a string for palindrome testing:");
 // let phrase = new PalindromeTest(string);
@@ -154,4 +155,4 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-},{"../../../index.js":1}]},{},[2]);
+},{"snoseeds-palindrome":1}]},{},[2]);
