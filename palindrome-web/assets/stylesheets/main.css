@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import "reset.css";
+
+/* Custom Styles */
+
+body {
+  background: green;
+  box-sizing: border-box;
+
+}
+
+.grid {
+  width: 980px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  text-align: justify;
+  box-sizing: border-box;
+  background: white;
+  /* border: 1px solid white; */
+
+}
+
+.header-wrapper,
+.footer-wrapper {
+  width: 100%;
+  min-width: 980px;
+}
+
+.header-wrapper {
+  background: green;
+  height: 40px;
+  padding-top: 5px;
+}
+
+.main-header h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: green;
+}
+
+.main-body h2 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  color: green;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+.testing-section form {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.testing-section form textarea {
+  height: 280px;
+  /* width: 100%; */
+  resize: none;
+  /* display: inline-block; */
+  overflow-y: scroll;
+  width: 280px;
+}
+
+.btn {
+  /* padding: 1px auto; */
+  border-radius: 5px;
+  /* display: block; */
+  /* margin-left: 20px; */
+  width: 280px;
+  color: white;
+  background: green;
+}
+
+.btn:hover {
+  border: 1px solid white;
+}
+
+.summary {
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+.palindrome-section {
+  height: 300px;
+  width: 30%;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 1.3;
+  /* display: inline-block; */
+  /* text-align: center; */
+}
+
+li {
+  line-height: 1.3;
+}
+
+.results-section {
+  height: 400px;
+}
+
+.results-section section {
+  border-radius: 5px;
+  /* padding-bottom: 20px; */
+  border: 1px solid green;
+}
+
+.results-section section:first-of-type + section {
+  float: right;
+}
+
+.results-section p {
+  /* clear: both; */
+}

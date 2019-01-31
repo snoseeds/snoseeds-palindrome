@@ -3,9 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>Palindrome Tester</title>
-    <script src="bundle.js"></script>
+    <script src="assets/scripts/bundle.js"></script>
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <stylesheets ></stylesheets>
   </head>
   <body>
-    <h1>Palindrome Tester</h1>
+    <div class="header-wrapper">
+      <header class="main-header grid">
+        <h1>Palindrome Tester</h1>
+      </header>
+    </div>
+    <!--the body attributes of this html page are used as the wrapper for the main-body section-->
+    <section class="main-body grid">
+      <section class="intro">
+        <h2>Description</h2>
+        <p>Palindromes are words or sentences that have the same spelling from their first alphabet to their last alphabet and from their last alphabet to their first alphabet, even if that's only after removal of punctuation marks or spaces.</p>
+      </section>
+      <section class="testing-section">
+        <h2>Direction for Testing</h2>
+        <p>Separate entries (phrases or sentences) to be tested as a single palindrome by pressing the `Enter key` once at least. Irrespective, all individual words in all the lines would be tested whether they are palindromes or not in addition to the tested Phrases or Sentences that are on each new line.</p>
+        <p>Do note that single alphabet words are not taken as palindromes, and that multiple palindrome words or phrases in the inputs would only be shown to have passed as palindromes once.</p>
+        <section class="">
+          <form id="palindromeTester">
+            <textarea name="phrases"></textarea>
+            <br>
+            <button type="submit" class="btn">Check for Palindrome words and phrases/sentences</button>
+          </form>
+        </section>
+      </section>
+      <section class="results-section" id="">
+        <h2>Results Summary</h2>
+        <section class="summary">
+          <p class="" id="resultSummary"></p>
+          <p id="failedTest"></p>
+        </section>
+        <section class="palindrome-section">
+          <p class="good-result" id="passedPhrases">
+          </p>
+        </section>
+        <section class="palindrome-section">
+          <p class="good-result" id="passedWords">
+          </p>
+        </section>
+      </section>
+    <div class="footer-wrapper">
+      <footer class="main-footer grid">
+      </footer>
+    </div>
   </body>
 </html>
