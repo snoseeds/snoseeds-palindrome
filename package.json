@@ -1,6 +1,6 @@
 {
   "name": "snoseeds-palindrome",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Palindrome detector",
   "main": "index.js",
   "scripts": {
