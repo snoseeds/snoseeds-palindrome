@@ -16,7 +16,7 @@ let wordsOnly = rawWords => rawWords.join(" ").match(/[\w']+/g).filter((v, i, ar
 
 // Returns Map Object of unique strings (duplicate phrases regardless of case, punctuation, or space as well as single words are removed) in the raw from received
 let phrasesOnly = rawPhrases => rawPhrases.filter((v, i, array) =>
-  !!v.match(/[a-z]/gi) && v.match(/[\w']+/g).length > 1 && array.indexOf(v) === i).reduce((UniquePhrasesMap, value) =>
+  !!v.match(/[a-z]/gi) && v.match(/[a-z]/gi).length > 1 && v.match(/[\w']+/g).length > 1 && array.indexOf(v) === i).reduce((UniquePhrasesMap, value) =>
   UniquePhrasesMap.set(value.toLowerCase().match(/[a-z]/gi).join(""), value), new Map());
 
 // Takes a map having mixed boolean values and Returns a map of properties whose values are true
